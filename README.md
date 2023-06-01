@@ -1,30 +1,24 @@
-## EX-6 IMPLEMENTATION OF PING COMMAND
-```
-DATE : 13-04-2023
-```
-### AIM :
-To write the python program for simulating ping command.
-### ALGORITHM :
-```
-1. Start the program.
-2. Include necessary package in java.
-3. To create a process object p to implement the ping command.
-4. Declare one Buffered Reader stream class object.
-5. Get the details of the server
-6. Length of the IP address.
-7. Time required to get the details.
-8. Send packets, receive packets and lost packets.
-9. Minimum, maximum and average times.
-10. Print the results.
-11. Stop the program.
-```
-### PROGRAM :
-```
-Developed : K AJAY
-Reg.No. : 212221040008
-```
-#### Client Side:
-```
+# EX-6 IMPLEMENTATION OF PING COMMAND
+
+# DATE :13.04.2023
+
+# AIM :
+### To write the python program for simulating ping command.
+# ALGORITHM :
+### Step 1: start the program. 
+### Step 2: Include necessary package in java. 
+### Step 3: To create a process object p to implement the ping command. 
+### Step 4: declare one Buffered Reader stream class object. 
+### Step 5: Get the details of the server 
+### 5:1: length of the IP address. 
+### 5:2: time required to get the details. 
+### 5:3: send packets, receive packets and lost packets. 
+### 5.4: minimum, maximum and average times. 
+### Step 6: print the results. Step 7: Stop the program.
+# CLIENT PROGRAM :
+```PY
+## Developed : R Amrish
+## Reg no : 212221040012
 import socket
 from pythonping import ping
 s=socket.socket()
@@ -38,8 +32,8 @@ while True:
     except KeyError:
         c.send("Not Found".encode())
 ```
-#### Server Side:
-```
+# SERVER PROGRAM :
+```PY
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -47,24 +41,12 @@ while True:
     ip=input("Enter the website you want to ping ")
     s.send(ip.encode())
     print(s.recv(1024).decode())
+
 ```
-### OUTPUT :
-#### Client Side:
-![image](https://github.com/Pavan-Gv/EX-6/assets/94827772/4c043989-1ce8-4a79-a6b0-5b3d7b260c58)
-#### Server Side:
-![image](https://github.com/Pavan-Gv/EX-6/assets/94827772/10f5575f-6ecc-41e6-a9c9-e5a17e5ebee4)
-### RESULT :
-Thus, the python program for simulating ping command was successfully executed.
+# OUTPUT :
+![output](./o1.png)
+![output](./o2.png)
+# RESULT:
+### Thus, the python program for simulating ping command was successfully executed.
 
 
-ALGORITHM :
-
-
-PROGRAM :
-
-
-OUTPUT :
-
-
-
-RESULT :
